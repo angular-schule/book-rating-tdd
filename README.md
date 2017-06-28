@@ -1,5 +1,9 @@
 # BookRatingRedux
 
+Demo for our talk about Angular and testing:
+* Demo: TODO
+* Slides: [Testgetriebene Entwicklung (TDD) mit Angular](https://github.com/angular-schule/presentations/blob/gh-pages/angular_tdd)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 
 ## Development server
