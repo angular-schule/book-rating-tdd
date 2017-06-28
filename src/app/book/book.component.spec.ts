@@ -25,15 +25,27 @@ describe('BookComponent', () => {
 
   it('should forward calls to book.rateDown', () => {
 
-    const bookMock = new Book('', '', '');
-    spyOn(bookMock, 'rateDown').and.callThrough();
+    const book = new Book('', '', '');
+    spyOn(book, 'rateDown').and.callThrough();
 
-    component.book = bookMock;
+    component.book = book;
     component.rateDown();
 
-    expect(bookMock.rateDown).toHaveBeenCalled();
+    expect(book.rateDown).toHaveBeenCalled();
   });
 
+  it('should rateUp when a button is clicked', () => {
+
+    const book = { rateUp: () => { } } as Book;
+    spyOn(book, 'rateUp');
+
+    component.book = book;
+
+    fixture.nativeElement.querySelector('button').click();
+    fixture.detectChanges();
+
+    expect(book.rateUp).toHaveBeenCalled();
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
