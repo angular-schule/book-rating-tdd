@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
 
 import { CreateBookComponent } from './create-book.component';
 
@@ -9,8 +8,7 @@ describe('CreateBookComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [CreateBookComponent],
-      imports: [FormsModule]
+      declarations: [CreateBookComponent]
     })
     .compileComponents();
   }));
@@ -21,7 +19,7 @@ describe('CreateBookComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should createshould be created', () => {
     expect(component).toBeTruthy();
   });
 });

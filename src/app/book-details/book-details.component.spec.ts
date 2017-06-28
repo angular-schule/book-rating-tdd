@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 
 import { BookDetailsComponent } from './book-details.component';
 
@@ -9,8 +8,7 @@ describe('BookDetailsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [BookDetailsComponent],
-      imports: [RouterTestingModule]
+      declarations: [BookDetailsComponent]
     })
     .compileComponents();
   }));
@@ -21,7 +19,7 @@ describe('BookDetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

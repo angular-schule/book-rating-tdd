@@ -11,17 +11,4 @@ export class BookComponent {
 
   @Input()
   book: Book;
-
-  @Output()
-  rated = new EventEmitter<Book>();
-
-  rateUp() {
-    this.book.rateUp();
-    this.rated.emit(this.book);
-  }
-
-  rateDown() {
-    this.book.rateDown();
-    this.rated.emit(this.book);
-  }
 }

@@ -8,21 +8,11 @@ import { BookStoreService } from './book-store.service';
 describe('BookStoreService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [
-        {
-          provide: Http,
-          useValue: {
-            get: () => Observable.of({
-              json: () => []
-            })
-          }
-        },
-        BookStoreService
-      ]
+      providers: [BookStoreService]
     });
   });
 
-  it('should ...', inject([BookStoreService], (service: BookStoreService) => {
+  it('should be created', inject([BookStoreService], (service: BookStoreService) => {
     expect(service).toBeTruthy();
   }));
 });
